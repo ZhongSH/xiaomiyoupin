@@ -1,0 +1,332 @@
+@charset "UTF-8";
+#top {
+  height: 48px;
+  background: #333;
+  font-size: 14px;
+  line-height: 48px;
+  color: #e7e7e7;
+}
+#top a {
+  color: #e7e7e7;
+}
+#top a:hover {
+  color: #fff;
+}
+#top .fr {
+  /* width: 465px; */
+  height: 48px;
+}
+#top .fr li {
+  float: left;
+  margin: 0 8px;
+  position: relative;
+}
+#top .fr .line {
+  display: inline-block;
+  border-color: #666;
+  margin: 17px 3px 0 6px;
+  height: 16px;
+  vertical-align: middle;
+  border-right: 1px solid #e7e7e7;
+}
+#top .fr .icon {
+  display: inline-block;
+  background-image: url("../img/icons.png");
+}
+#top .fr .app {
+  width: 30px;
+  height: 30px;
+  background-position: 0 -1016px;
+  position: absolute;
+  left: -5px;
+  top: 9px;
+}
+#top .fr .down {
+  width: 30px;
+  height: 30px;
+  background-position: 0 -1662;
+  position: absolute;
+  right: -10;
+  top: 9px;
+}
+#top .fr .user {
+  width: 30px;
+  height: 30px;
+  background-position: 0 -710;
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+#top .fr .login-info {
+  position: relative;
+}
+#top .fr .login-info:hover .top-nav {
+  height: 175px;
+  opacity: 1;
+}
+#top .fr .top-nav {
+  position: absolute;
+  width: 100px;
+  height: 0;
+  left: 50%;
+  margin-left: -50px;
+  top: 48px;
+  box-shadow: 0 3px 28px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0, 1, 0.5, 1);
+  background: #fff;
+  z-index: 999;
+  overflow: hidden;
+  opacity: 0;
+}
+#top .fr .top-nav li {
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 10px;
+  margin: 0;
+  text-align: center;
+}
+#top .fr .top-nav li a {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+#top .fr .top-nav li:hover {
+  background: #845f3f;
+}
+#top .fr .top-nav li:hover a {
+  color: #fff;
+}
+#top .fr #userinfo {
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+  padding: 0 25px 0 40px;
+  margin-right: -5px;
+}
+
+#header {
+  height: 51px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+#header .logo {
+  padding-top: 6px;
+  width: 260px;
+}
+#header .logo img {
+  width: 123px;
+}
+#header .limit {
+  display: block;
+  margin-right: 32px;
+  height: 51px;
+  line-height: 57px;
+  font-size: 18px;
+  color: #666;
+}
+#header .search {
+  width: 246px;
+  padding-left: 35px;
+  padding-top: 9px;
+  height: 32px;
+  /* border-bottom: 1px solid #e7e7e7; */
+  border-bottom: 1px solid #845f3f;
+  position: relative;
+}
+#header .search .icon-search {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icons.png");
+  background-position: 0 -1458px;
+  position: absolute;
+  left: -4px;
+  top: 10px;
+}
+#header .search .icon-search:hover {
+  background-position: 0 -1424px;
+}
+#header .search #search-val {
+  width: 100%;
+  height: 32px;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  outline: 0;
+}
+#header .icon-cart {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icons.png");
+  background-position: 0 -948px;
+  margin: 15px 10px 5px;
+}
+#header .icon-cart:hover {
+  background-position: 0 -1186px;
+}
+
+#footer {
+  height: 45px;
+  margin-top: 60px;
+  padding: 45px 0;
+  line-height: 23px;
+  border-top: 1px solid #e7e7e7;
+  color: #666;
+}
+#footer .f-logo img {
+  height: 45px;
+}
+#footer .f-logo.fr img {
+  height: 36px;
+}
+#footer .about {
+  font-size: 12px;
+  color: #666;
+  margin-right: 40px;
+}
+#footer .about img {
+  width: 15;
+  height: 15px;
+}
+
+#fixedbar {
+  position: fixed;
+  top: 220px;
+  right: 10px;
+  z-index: 999;
+  width: 71px;
+  padding: 0 5px;
+  background: #fff;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+#fixedbar li {
+  padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  color: #333;
+  height: 51px;
+}
+#fixedbar li:hover {
+  color: #845f3f;
+}
+#fixedbar li .icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 4px;
+  background-image: url("../img/icons.png");
+  background-repeat: no-repeat;
+}
+#fixedbar li:nth-child(1) .icon {
+  background-position: 0 -1628px;
+}
+#fixedbar li:nth-child(1):hover .icon {
+  background-position: 0 -1594px;
+}
+#fixedbar li:nth-child(2):hover .icon {
+  background-position: 0 -1220px;
+}
+#fixedbar li:nth-child(2) .icon {
+  background-position: 0 -1254px;
+}
+#fixedbar li:nth-child(3) .icon {
+  background-position: 0 -778px;
+}
+#fixedbar li:nth-child(3):hover .icon {
+  background-position: 0 -744px;
+}
+#fixedbar li:nth-child(4) .icon {
+  background-position: 0 -982px;
+}
+#fixedbar li:nth-child(4):hover .icon {
+  background-position: 0 -1764px;
+}
+#fixedbar li:nth-child(5) .icon {
+  background-position: 0 -1288px;
+}
+#fixedbar li:nth-child(5):hover .icon {
+  background-position: 0 -1322px;
+}
+
+#list {
+  background: #f2f2f2;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+#list .list-nav {
+  padding: 30px 0;
+  font-size: 13px;
+}
+#list .list-nav a {
+  color: #000;
+}
+#list .list-nav a.path {
+  color: #999;
+}
+#list .search-tit {
+  padding-top: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+#list .group h2 {
+  padding-bottom: 13px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #333;
+}
+#list .group li {
+  float: left;
+  width: 266px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  background: #fff;
+  transition: all .4s;
+}
+#list .group li:nth-child(4n+1) {
+  margin-left: 0;
+}
+#list .group li:hover {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -2px, 0);
+}
+#list .group li img {
+  width: 195px;
+  height: 195px;
+}
+#list .group li h3 {
+  height: 26px;
+  line-height: 26px;
+  margin-top: 10px;
+  color: #333;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#list .group li p {
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#list .group li span {
+  line-height: 26px;
+  color: #a92112;
+}
+#list .group li span::before {
+  content: '￥';
+  font-size: 12px;
+  color: #a92112;
+}
+
+/*# sourceMappingURL=list.css.map */

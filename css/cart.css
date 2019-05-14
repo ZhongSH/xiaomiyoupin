@@ -1,0 +1,435 @@
+@charset "UTF-8";
+#top {
+  height: 48px;
+  background: #333;
+  font-size: 14px;
+  line-height: 48px;
+  color: #e7e7e7;
+}
+#top a {
+  color: #e7e7e7;
+}
+#top a:hover {
+  color: #fff;
+}
+#top .fr {
+  /* width: 465px; */
+  height: 48px;
+}
+#top .fr li {
+  float: left;
+  margin: 0 8px;
+  position: relative;
+}
+#top .fr .line {
+  display: inline-block;
+  border-color: #666;
+  margin: 17px 3px 0 6px;
+  height: 16px;
+  border-right: 1px solid #e7e7e7;
+}
+#top .fr .icon {
+  display: inline-block;
+  background-image: url("../img/icons.png");
+}
+#top .fr .app {
+  width: 30px;
+  height: 30px;
+  background-position: 0 -1016px;
+  position: absolute;
+  left: -5px;
+  top: 9px;
+}
+#top .fr .down {
+  width: 30px;
+  height: 30px;
+  background-position: 0 -1662;
+  position: absolute;
+  right: -10;
+  top: 9px;
+}
+#top .fr .user {
+  width: 30px;
+  height: 30px;
+  background-position: 0 -710;
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+#top .fr .login-info {
+  position: relative;
+}
+#top .fr .login-info:hover .top-nav {
+  height: 175px;
+  opacity: 1;
+}
+#top .fr .top-nav {
+  position: absolute;
+  width: 100px;
+  height: 0;
+  left: 50%;
+  margin-left: -50px;
+  top: 48px;
+  box-shadow: 0 3px 28px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0, 1, 0.5, 1);
+  background: #fff;
+  z-index: 999;
+  overflow: hidden;
+  opacity: 0;
+}
+#top .fr .top-nav li {
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 10px;
+  margin: 0;
+  text-align: center;
+}
+#top .fr .top-nav li a {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+#top .fr .top-nav li:hover {
+  background: #845f3f;
+}
+#top .fr .top-nav li:hover a {
+  color: #fff;
+}
+#top .fr #userinfo {
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+  padding: 0 25px 0 40px;
+  margin-right: -5px;
+}
+
+#header {
+  height: 51px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+#header .logo {
+  padding-top: 6px;
+  width: 260px;
+}
+#header .logo img {
+  width: 123px;
+}
+#header .limit {
+  display: block;
+  margin-right: 32px;
+  height: 51px;
+  line-height: 57px;
+  font-size: 18px;
+  color: #666;
+}
+#header .search {
+  width: 246px;
+  padding-left: 35px;
+  padding-top: 9px;
+  height: 32px;
+  /* border-bottom: 1px solid #e7e7e7; */
+  border-bottom: 1px solid #845f3f;
+  position: relative;
+}
+#header .search .icon-search {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icons.png");
+  background-position: 0 -1458px;
+  position: absolute;
+  left: -4px;
+  top: 10px;
+}
+#header .search .icon-search:hover {
+  background-position: 0 -1424px;
+}
+#header .search #search-val {
+  width: 100%;
+  height: 32px;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  outline: 0;
+}
+#header .icon-cart {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icons.png");
+  background-position: 0 -948px;
+  margin: 15px 10px 5px;
+}
+#header .icon-cart:hover {
+  background-position: 0 -1186px;
+}
+
+#footer {
+  height: 45px;
+  margin-top: 60px;
+  padding: 45px 0;
+  line-height: 23px;
+  border-top: 1px solid #e7e7e7;
+  color: #666;
+}
+#footer .f-logo img {
+  height: 45px;
+}
+#footer .f-logo.fr img {
+  height: 36px;
+}
+#footer .about {
+  font-size: 12px;
+  color: #666;
+  margin-right: 40px;
+}
+#footer .about img {
+  width: 15;
+  height: 15px;
+}
+
+#fixedbar {
+  position: fixed;
+  top: 220px;
+  right: 10px;
+  z-index: 999;
+  width: 71px;
+  padding: 0 5px;
+  background: #fff;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+#fixedbar li {
+  padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  color: #333;
+  height: 51px;
+}
+#fixedbar li:hover {
+  color: #845f3f;
+}
+#fixedbar li .icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 4px;
+  background-image: url("../img/icons.png");
+  background-repeat: no-repeat;
+}
+#fixedbar li:nth-child(1) .icon {
+  background-position: 0 -1628px;
+}
+#fixedbar li:nth-child(1):hover .icon {
+  background-position: 0 -1594px;
+}
+#fixedbar li:nth-child(2):hover .icon {
+  background-position: 0 -1220px;
+}
+#fixedbar li:nth-child(2) .icon {
+  background-position: 0 -1254px;
+}
+#fixedbar li:nth-child(3) .icon {
+  background-position: 0 -778px;
+}
+#fixedbar li:nth-child(3):hover .icon {
+  background-position: 0 -744px;
+}
+#fixedbar li:nth-child(4) .icon {
+  background-position: 0 -982px;
+}
+#fixedbar li:nth-child(4):hover .icon {
+  background-position: 0 -1764px;
+}
+#fixedbar li:nth-child(5) .icon {
+  background-position: 0 -1288px;
+}
+#fixedbar li:nth-child(5):hover .icon {
+  background-position: 0 -1322px;
+}
+
+#main {
+  padding-bottom: 80px;
+  overflow: hidden;
+  border-top: 1px solid #e7e7e7;
+}
+#main .main-nav {
+  padding: 30px 0;
+  font-size: 13px;
+}
+#main .main-nav a {
+  color: #000;
+}
+#main .main-nav a.path {
+  color: #999;
+}
+#main .select-btn {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  box-sizing: content-box;
+  margin-left: 7px;
+  margin-right: 15px;
+  vertical-align: middle;
+  margin-top: -3px;
+  background: url("../img/icons.png") no-repeat;
+  background-position: 0 -490px;
+}
+#main .main-title {
+  height: 42px;
+  line-height: 40px;
+  background-color: #fafafa;
+  color: #999;
+  margin-bottom: 3px;
+}
+#main .main-title span {
+  display: inline-block;
+}
+#main .main-title span.all {
+  width: 125px;
+}
+#main .main-title span.product {
+  width: 320px;
+}
+#main .main-title span.price {
+  width: 205px;
+}
+#main .main-title span.num {
+  width: 205px;
+}
+#main .main-title span.total {
+  width: 125px;
+}
+#main .main-content {
+  padding-bottom: 100px;
+}
+#main .main-content .shop-info {
+  padding-top: 47px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #e7e7e7;
+}
+#main .main-content .good-items {
+  border-bottom: 1px solid #e7e7e7;
+}
+#main .main-content .good-items .goodselect {
+  padding-top: 64px;
+}
+#main .main-content .good-items .goodimg {
+  height: 142px;
+  position: relative;
+  width: 120px;
+  cursor: pointer;
+}
+#main .main-content .good-items .goodimg img {
+  width: 120px;
+  height: 120px;
+}
+#main .main-content .good-items .goodname {
+  box-sizing: border-box;
+  width: 330px;
+  padding: 27px 90px 27px 5px;
+  height: 142px;
+  line-height: 88px;
+  cursor: pointer;
+}
+#main .main-content .good-items .goodprice {
+  width: 215px;
+  height: 72px;
+  padding: 35px 0;
+  line-height: 72px;
+  text-align: left;
+}
+#main .main-content .good-items .goodnum {
+  width: 205px;
+  padding-top: 56px;
+}
+#main .main-content .good-items .goodnum .num-edit {
+  margin-left: -55px;
+  display: inline-block;
+}
+#main .main-content .good-items .goodnum .num-edit div {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  height: 32px;
+  border: 1px solid #b3b3b3;
+  overflow: hidden;
+}
+#main .main-content .good-items .goodnum .num-edit div .num-add,
+#main .main-content .good-items .goodnum .num-edit div .num-sub {
+  float: left;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  font-size: 24px;
+  color: #845f3f;
+}
+#main .main-content .good-items .goodnum .num-edit div .text {
+  float: left;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  border-left: 1px solid #b3b3b3;
+  border-right: 1px solid #b3b3b3;
+}
+#main .main-content .good-items .goodtotal {
+  padding: 35px 0;
+  height: 72px;
+  line-height: 72px;
+  width: 130px;
+  text-align: left;
+  color: #c00000;
+}
+#main .main-content .good-items .gooddel {
+  padding-top: 66px;
+}
+#main .main-content .good-items .gooddel .del {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url("../img/icons.png") no-repeat;
+  background-position: 0 -119px;
+}
+#main .main-foot {
+  position: relative;
+  background-color: #fafafa;
+  font-size: 18px;
+  height: 80px;
+}
+#main .main-foot .ico {
+  padding: 25px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+}
+#main .main-foot .totol-price {
+  height: 55px;
+  padding-top: 25px;
+  position: absolute;
+  right: 230px;
+  bottom: 0;
+  font-size: 20px;
+  color: #333;
+}
+#main .main-foot .totol-price .totol {
+  color: #c00000;
+}
+#main .main-foot .totol-price .totol::before {
+  content: '￥';
+}
+#main .main-foot .checkout {
+  float: right;
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #a9010d;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=cart.css.map */
