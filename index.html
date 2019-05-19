@@ -5,7 +5,12 @@
     <title>小米有品</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/bar.css">
+    <link rel="stylesheet" href="css/footer.css"> -->
+    <link rel="stylesheet" href="css/common.css">
 </head>
 
 <body>
@@ -14,7 +19,7 @@
         <div class="top con">
             <div class="fr">
                 <ul>
-                    <!-- <li class="login-info">
+                    <li class="login-info">
                         <span class="icon user"></span>
                         <a href="#" id="userinfo">用户名</a>
                         <span class="icon down"></span>
@@ -24,13 +29,13 @@
                                 <li><a href="#">我的资产</a></li>
                                 <li><a href="#">我的收藏</a></li>
                                 <li><a href="#">地址管理</a></li>
-                                <li><a href="#">退出登陆</a></li>
+                                <li id="logout"><a href="#">退出登陆</a></li>
                             </ul>
                         </div>
-                    </li> -->
-                    <li>
-                        <a href="#">登陆</a>
-                        <a href="#" style="margin-left: 8px;">注册</a>
+                    </li>
+                    <li class="lognreg">
+                        <a href="./html/login.html">登陆</a>
+                        <a href="./html/reg.html" style="margin-left: 8px;">注册</a>
                     </li>
                     <span class="line fl"></span>
                     <li><a href="#">帮助中心</a></li>
@@ -55,10 +60,15 @@
     <div id="header">
         <div class="header con">
             <h1 class="logo fl">
-                <a href="#"><img src="./img/logo.png" alt=""></a>
+                <a href="#" style="display: inline-block;">
+                    <!-- <img src="./img/logo.png" alt=""> -->
+                </a>
             </h1>
             <a class="limit fl" href="#">限时抢购</a>
-            <a href="#" class="icon-cart fr"></a>
+            <div class="shopping fr">
+                <a href="###" id="cart" class="icon-cart fr"></a>
+                <span class="cart_info">0</span>
+            </div>
             <div class="search fr">
                 <a href="#" class="icon-search"></a>
                 <input type="text" placeholder="搜一搜" id="search-val">
@@ -70,10 +80,12 @@
     <div id="banner">
         <div class="banner con">
             <div class="nav fl">
-                <ul>
+                <ul id="nav">
                     <li>
-                        <span>有品推荐/家用电器</span>
-                        <div class="nav2">
+                        <a href="#">有品推荐</a>
+                        <span>/</span>
+                        <a href="#">家用电器</a>
+                        <!-- <div class="nav2">
                             <div class="group clearfix">
                                 <p class="title">有品推荐</p>
                                 <ul>
@@ -112,77 +124,116 @@
                                 </ul>
                             </div>
                             <div class="group clearfix">
-                                    <p class="title">有品推荐</p>
-                                    <ul>
-                                        <li class="item">
-                                            <img src="./img/hot1.jpg" alt="">
-                                            <span>商品</span>
-                                        </li>
-                                        <li class="item">
-                                            <img src="./img/hot1.jpg" alt="">
-                                            <span>商品</span>
-                                        </li>
-                                        <li class="item">
-                                            <img src="./img/hot1.jpg" alt="">
-                                            <span>商品</span>
-                                        </li>
-                                        <li class="item">
-                                            <img src="./img/hot1.jpg" alt="">
-                                            <span>商品</span>
-                                        </li>
-                                        <li class="item">
-                                            <img src="./img/hot1.jpg" alt="">
-                                            <span>商品</span>
-                                        </li>
-                                        <li class="item">
-                                            <img src="./img/hot1.jpg" alt="">
-                                            <span>商品</span>
-                                        </li>
-                                        <li class="item">
-                                            <img src="./img/hot1.jpg" alt="">
-                                            <span>商品</span>
-                                        </li>
-                                        <li class="item">
-                                            <img src="./img/hot1.jpg" alt="">
-                                            <span>商品</span>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <p class="title">有品推荐</p>
+                                <ul>
+                                    <li class="item">
+                                        <img src="./img/hot1.jpg" alt="">
+                                        <span>商品</span>
+                                    </li>
+                                    <li class="item">
+                                        <img src="./img/hot1.jpg" alt="">
+                                        <span>商品</span>
+                                    </li>
+                                    <li class="item">
+                                        <img src="./img/hot1.jpg" alt="">
+                                        <span>商品</span>
+                                    </li>
+                                    <li class="item">
+                                        <img src="./img/hot1.jpg" alt="">
+                                        <span>商品</span>
+                                    </li>
+                                    <li class="item">
+                                        <img src="./img/hot1.jpg" alt="">
+                                        <span>商品</span>
+                                    </li>
+                                    <li class="item">
+                                        <img src="./img/hot1.jpg" alt="">
+                                        <span>商品</span>
+                                    </li>
+                                    <li class="item">
+                                        <img src="./img/hot1.jpg" alt="">
+                                        <span>商品</span>
+                                    </li>
+                                    <li class="item">
+                                        <img src="./img/hot1.jpg" alt="">
+                                        <span>商品</span>
+                                    </li>
+                                </ul>
                             </div>
+                        </div> -->
                     </li>
                     <li>
-                        <span>有品推荐/家用电器</span>
+                        <a href="#">智能家庭</a>
+                        <span>/</span>
+                        <a href="#">电视影音</a>
                     </li>
                     <li>
-                        <span>有品推荐/家用电器</span>
+                        <a href="#">家居家装</a>
+                        <span>/</span>
+                        <a href="#">居家餐厨</a>
                     </li>
                     <li>
-                        <span>有品推荐/家用电器</span>
+                        <a href="#">运动户外</a>
+                        <span>/</span>
+                        <a href="#">出行车品</a>
                     </li>
                     <li>
-                        <span>有品推荐/家用电器</span>
+                        <a href="#">手机电脑</a>
+                        <span>/</span>
+                        <a href="#">数码配件</a>
                     </li>
                     <li>
-                        <span>有品推荐/家用电器</span>
+                        <a href="#">服装配饰</a>
+                        <span>/</span>
+                        <a href="#">鞋靴箱包</a>
                     </li>
                     <li>
-                        <span>有品推荐/家用电器</span>
+                        <a href="#">日用文创</a>
+                        <span>/</span>
+                        <a href="#">美食酒饮</a>
                     </li>
                     <li>
-                        <span>有品推荐/家用电器</span>
+                        <a href="#">美妆个护</a>
+                        <span>/</span>
+                        <a href="#">医疗健康</a>
                     </li>
                     <li>
-                        <span>有品推荐/家用电器</span>
+                        <a href="#">母婴亲子</a>
+                        <span>/</span>
+                        <a href="#">宠物生活</a>
                     </li>
+
                 </ul>
             </div>
-            <div class="swiper fl">
+            <div class="swiper fr">
+                <ol>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                </ol>
+                <div class="scr_arrow_l scr_arrow"></div>
+                <div class="scr_arrow_r scr_arrow"></div>
                 <ul>
                     <li>
-                        <a href="#">
-                            <img src="./img/img (1).jpg" alt="">
-                        </a>
+                        <a href="#"><img src="./img/banner/img1.jpg" alt=""></a>
                     </li>
+                    <li>
+                        <a href="#"><img src="./img/banner/img2.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/banner/img3.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/banner/img4.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/banner/img5.jpg" alt=""></a>
+                    </li>
+                    <!-- <li>
+                        <a href="#"><img src="./img/banner/img1.jpg" alt=""></a>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -197,20 +248,20 @@
                     <p>每日新品</p>
                 </li>
                 <li>
-                    <div><img src="./img/wrap1.png" alt=""></div>
-                    <p>每日新品</p>
+                    <div><img src="./img/wrap2.png" alt=""></div>
+                    <p>小米众筹</p>
                 </li>
                 <li>
-                    <div><img src="./img/wrap1.png" alt=""></div>
-                    <p>每日新品</p>
+                    <div><img src="./img/wrap3.png" alt=""></div>
+                    <p>限时抢购</p>
                 </li>
                 <li>
-                    <div><img src="./img/wrap1.png" alt=""></div>
-                    <p>每日新品</p>
+                    <div><img src="./img/wrap4.png" alt=""></div>
+                    <p>热销榜单</p>
                 </li>
                 <li>
-                    <div><img src="./img/wrap1.png" alt=""></div>
-                    <p>每日新品</p>
+                    <div><img src="./img/wrap5.png" alt=""></div>
+                    <p>有品夜市</p>
                 </li>
             </ul>
         </div>
@@ -223,36 +274,61 @@
                 有品推荐
                 <span>为您甄选 悦心购买</span>
             </h2>
-            <ul>
-                <li>
-                    <div class="text">
-                        <h3>给妈妈换部新手机</h3>
-                        <p>小米9现货热卖</p>
-                    </div>
-                    <img src="./img/recommend1.png" alt="">
-                </li>
-                <li>
-                    <div class="text">
-                        <h3>给妈妈换部新手机</h3>
-                        <p>小米9现货热卖</p>
-                    </div>
-                    <img src="./img/recommend1.png" alt="">
-                </li>
-                <li>
-                    <div class="text">
-                        <h3>给妈妈换部新手机</h3>
-                        <p>小米9现货热卖</p>
-                    </div>
-                    <img src="./img/recommend1.png" alt="">
-                </li>
-                <li>
-                    <div class="text">
-                        <h3>给妈妈换部新手机</h3>
-                        <p>小米9现货热卖</p>
-                    </div>
-                    <img src="./img/recommend1.png" alt="">
-                </li>
-            </ul>
+            <div class="content clearfix">
+                <ul id="recomlist">
+                    <li>
+                        <div class="text">
+                            <h3>小米电视品类日</h3>
+                            <p>最高直降4000元</p>
+                        </div>
+                        <img src="./img/recommend1.png" alt="">
+                    </li>
+                    <li>
+                        <div class="text">
+                            <h3>粽飘香 食端阳</h3>
+                            <p>部分3件8折</p>
+                        </div>
+                        <img src="./img/recommend2.png" alt="">
+                    </li>
+                    <li>
+                        <div class="text">
+                            <h3>智能酷玩 助力浪漫</h3>
+                            <p>爆品最高直降400元</p>
+                        </div>
+                        <img src="./img/recommend3.png" alt="">
+                    </li>
+                    <li>
+                        <div class="text">
+                            <h3>520真情告白</h3>
+                            <p>最高直降200元</p>
+                        </div>
+                        <img src="./img/recommend4.png" alt="">
+                    </li>
+                    <li>
+                        <div class="text">
+                            <h3>给妈妈换部新手机</h3>
+                            <p>小米9现货热卖</p>
+                        </div>
+                        <img src="./img/recommend1.png" alt="">
+                    </li>
+                    <li>
+                        <div class="text">
+                            <h3>给妈妈换部新手机</h3>
+                            <p>小米9现货热卖</p>
+                        </div>
+                        <img src="./img/recommend1.png" alt="">
+                    </li>
+                    <li>
+                        <div class="text">
+                            <h3>给妈妈换部新手机</h3>
+                            <p>小米9现货热卖5</p>
+                        </div>
+                        <img src="./img/recommend1.png" alt="">
+                    </li>
+                </ul>
+                <div class="scr_arrow_l scr_arrow"></div>
+                <div class="scr_arrow_r scr_arrow"></div>
+            </div>
         </div>
     </div>
 
@@ -268,11 +344,11 @@
                 <li>
                     <div class="inner">
                         <div class="text">
-                            <h3>无线手持扫地机</h3>
-                            <p>快扫不扬尘，双刷不漏灰，静电吸...</p>
-                            <p class="price"><span>￥</span>99</p>
+                            <h3>峰米激光电视 4K Cinema</h3>
+                            <p>150英寸超巨幕，漫反射成像，超短...</p>
+                            <p class="price"><span>￥</span>10999</p>
                         </div>
-                        <img src="./img/wrap2.png" alt="">
+                        <img src="./img/crowd1.png" alt="">
                     </div>
                     <div class="line"></div>
                     <div class="info">
@@ -289,10 +365,10 @@
                 <li>
                     <div class="inner">
                         <div class="text">
-                            <h3>无线手持扫地机</h3>
-                            <p class="price"><span>￥</span>99</p>
+                            <h3>宠物喂食器</h3>
+                            <p class="price"><span>￥</span>199</p>
                         </div>
-                        <img src="./img/wrap2.png" alt="">
+                        <img src="./img/crowd2.png" alt="">
                     </div>
                     <div class="line"></div>
                     <div class="info">
@@ -309,10 +385,10 @@
                 <li>
                     <div class="inner">
                         <div class="text">
-                            <h3>无线手持扫地机</h3>
+                            <h3>九安智能血压计</h3>
                             <p class="price"><span>￥</span>99</p>
                         </div>
-                        <img src="./img/wrap2.png" alt="">
+                        <img src="./img/crowd3.png" alt="">
                     </div>
                     <div class="line"></div>
                     <div class="info">
@@ -340,21 +416,47 @@
                 <img src="./img/time.png" alt=""><span class="timestr">20:00场</span>
                 <a href="#" class="more">更多</a>
                 <div class="time">
-                    <span>20</span>
+                    <span id="hours">20</span>
                     <span>:</span>
-                    <span>20</span>
+                    <span id="mins">20</span>
                     <span>:</span>
-                    <span>20</span>
+                    <span id="secs">20</span>
                 </div>
             </h2>
             <ul>
                 <li>
                     <div class="imgbox">
-                        <img src="./img/trap1.png" alt="">
+                        <img src="./img/trap1.jpg" alt="">
                         <div class="tag">6.0折</div>
                     </div>
                     <div class="textbox">
-                        <h3>指思智能指纹鼠标</h3>
+                        <h3>休闲棉麻衬衫</h3>
+                        <p>
+                            <span class="price">99</span>
+                            <span class="price2">149</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgbox">
+                        <img src="./img/trap2.jpg" alt="">
+                        <div class="tag">6.0折</div>
+                    </div>
+                    <div class="textbox">
+                        <h3>无线手持电动擦地机</h3>
+                        <p>
+                            <span class="price">499</span>
+                            <span class="price2">599</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgbox">
+                        <img src="./img/trap3.jpg" alt="">
+                        <div class="tag">6.0折</div>
+                    </div>
+                    <div class="textbox">
+                        <h3>石墨烯理疗护腰带</h3>
                         <p>
                             <span class="price">28.8</span>
                             <span class="price2">48</span>
@@ -363,40 +465,14 @@
                 </li>
                 <li>
                     <div class="imgbox">
-                        <img src="./img/trap1.png" alt="">
+                        <img src="./img/trap4.jpg" alt="">
                         <div class="tag">6.0折</div>
                     </div>
                     <div class="textbox">
-                        <h3>指思智能指纹鼠标</h3>
+                        <h3>小熊不锈钢煮蛋器</h3>
                         <p>
-                            <span class="price">28.8</span>
-                            <span class="price2">48</span>
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="imgbox">
-                        <img src="./img/trap1.png" alt="">
-                        <div class="tag">6.0折</div>
-                    </div>
-                    <div class="textbox">
-                        <h3>指思智能指纹鼠标</h3>
-                        <p>
-                            <span class="price">28.8</span>
-                            <span class="price2">48</span>
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="imgbox">
-                        <img src="./img/trap1.png" alt="">
-                        <div class="tag">6.0折</div>
-                    </div>
-                    <div class="textbox">
-                        <h3>指思智能指纹鼠标</h3>
-                        <p>
-                            <span class="price">28.8</span>
-                            <span class="price2">48</span>
+                            <span class="price">99.8</span>
+                            <span class="price2">159</span>
                         </p>
                     </div>
                 </li>
@@ -416,45 +492,45 @@
                 <li>
                     <div class="imgbox">
                         <img src="./img/new1.jpg" alt="">
+                        <!-- <div class="tag">2色可选</div> -->
+                    </div>
+                    <div class="textbox">
+                        <h3>限量版大号擎天柱...</h3>
+                        <p>正版授权，古法铸造，黄铜材质...</p>
+                        <p class="price">15999</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgbox">
+                        <img src="./img/new2.jpg" alt="">
                         <div class="tag">2色可选</div>
                     </div>
                     <div class="textbox">
-                        <h3>谢霆锋亲自研发的风味粽子礼盒...</h3>
-                        <p>谢霆锋亲自研发，鮑你粽意，粽...</p>
+                        <h3>意外设计时光钢笔</h3>
+                        <p>匠心造物，复古文艺，私人订制</p>
+                        <p class="price">308</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgbox">
+                        <img src="./img/new3.jpg" alt="">
+                        <div class="tag">2色可选</div>
+                    </div>
+                    <div class="textbox">
+                        <h3>米家驱蚊器智能版</h3>
+                        <p>手机定时开关机，智能驱蚊更省...</p>
                         <p class="price">208</p>
                     </div>
                 </li>
                 <li>
                     <div class="imgbox">
-                        <img src="./img/new1.jpg" alt="">
+                        <img src="./img/new4.jpg" alt="">
                         <div class="tag">2色可选</div>
                     </div>
                     <div class="textbox">
-                        <h3>谢霆锋亲自研发的风味粽子礼盒...</h3>
-                        <p>谢霆锋亲自研发，鮑你粽意，粽...</p>
-                        <p class="price">208</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="imgbox">
-                        <img src="./img/new1.jpg" alt="">
-                        <div class="tag">2色可选</div>
-                    </div>
-                    <div class="textbox">
-                        <h3>谢霆锋亲自研发的风味粽子礼盒...</h3>
-                        <p>谢霆锋亲自研发，鮑你粽意，粽...</p>
-                        <p class="price">208</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="imgbox">
-                        <img src="./img/new1.jpg" alt="">
-                        <div class="tag">2色可选</div>
-                    </div>
-                    <div class="textbox">
-                        <h3>谢霆锋亲自研发的风味粽子礼盒...</h3>
-                        <p>谢霆锋亲自研发，鮑你粽意，粽...</p>
-                        <p class="price">208</p>
+                        <h3>滑板车座椅</h3>
+                        <p>官方定制/多重减震/快速折叠/安...</p>
+                        <p class="price">1999</p>
                     </div>
                 </li>
             </ul>
@@ -476,41 +552,41 @@
                         <div class="tag">2色可选</div>
                     </div>
                     <div class="textbox">
-                        <h3>谢霆锋亲自研发的风味粽子礼盒...</h3>
-                        <p>谢霆锋亲自研发，鮑你粽意，粽...</p>
+                        <h3>OJJ智能门锁X1</h3>
+                        <p>活体指纹识别，联动米家设备，...</p>
                         <p class="price">208</p>
                     </div>
                 </li>
                 <li>
                     <div class="imgbox">
-                        <img src="./img/hot1.jpg" alt="">
+                        <img src="./img/hot2.jpg" alt="">
                         <div class="tag">2色可选</div>
                     </div>
                     <div class="textbox">
-                        <h3>谢霆锋亲自研发的风味粽子礼盒...</h3>
-                        <p>谢霆锋亲自研发，鮑你粽意，粽...</p>
+                        <h3>勝 中式清酒250ml/490ml/740ml...</h3>
+                        <p>38%精米步合，纯米大吟酿，更符...</p>
+                        <p class="price">48</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgbox">
+                        <img src="./img/hot3.jpg" alt="">
+                        <div class="tag">2色可选</div>
+                    </div>
+                    <div class="textbox">
+                        <h3>鹿客智能猫眼青春版 CatY</h3>
+                        <p>随时看直播，7英寸大屏，断网也...</p>
                         <p class="price">208</p>
                     </div>
                 </li>
                 <li>
                     <div class="imgbox">
-                        <img src="./img/hot1.jpg" alt="">
+                        <img src="./img/hot4.jpg" alt="">
                         <div class="tag">2色可选</div>
                     </div>
                     <div class="textbox">
-                        <h3>谢霆锋亲自研发的风味粽子礼盒...</h3>
-                        <p>谢霆锋亲自研发，鮑你粽意，粽...</p>
-                        <p class="price">208</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="imgbox">
-                        <img src="./img/hot1.jpg" alt="">
-                        <div class="tag">2色可选</div>
-                    </div>
-                    <div class="textbox">
-                        <h3>谢霆锋亲自研发的风味粽子礼盒...</h3>
-                        <p>谢霆锋亲自研发，鮑你粽意，粽...</p>
+                        <h3>米家互联网变频空调 1.5匹</h3>
+                        <p>一级能效，全直流变频，高效冷...</p>
                         <p class="price">208</p>
                     </div>
                 </li>
@@ -658,7 +734,7 @@
                 <i class="icon"></i>
                 <p>关注微信</p>
             </li>
-            <li>
+            <li id="toTop">
                 <i class="icon"></i>
                 <p>回到顶部</p>
             </li>
@@ -676,7 +752,8 @@
             </div>
             <div class="about fr">
                 <p>©xiaomiyoupin.com 苏B2-20180351 苏ICP备18025642号-1 <i class="icon"><img src="./img/ficon.png"
-                            alt=""></i>苏公网安备 32010502010244号</p>
+                            alt=""></i>苏公网安备
+                    32010502010244号</p>
                 <p>企业名称：有品信息科技有限公司 关于我们 入驻有品</p>
                 <p>小米有品平台运营主体变更公告</p>
                 <p>南京市建邺区白龙江东街8号3栋9层</p>
@@ -685,5 +762,10 @@
     </div>
 
 </body>
+
+<script src="./lib/jquery-1.10.1.min.js"></script>
+<script src="./lib/cookie.js"></script>
+<!-- <script src="./js/common.js"></script> -->
+<script src="./js/index.js"></script>
 
 </html>

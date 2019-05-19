@@ -2,67 +2,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>购物车-小米有品</title>
+    <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/common.css">
 </head>
 
 <body>
     <!-- top -->
     <div id="top">
-        <div class="top con">
-            <div class="fr">
-                <ul>
-                    <!-- <li class="login-info">
-                            <span class="icon user"></span>
-                            <a href="#" id="userinfo">用户名</a>
-                            <span class="icon down"></span>
-                            <div class="top-nav">
-                                <ul>
-                                    <li><a href="#">我的订单</a></li>
-                                    <li><a href="#">我的资产</a></li>
-                                    <li><a href="#">我的收藏</a></li>
-                                    <li><a href="#">地址管理</a></li>
-                                    <li><a href="#">退出登陆</a></li>
-                                </ul>
-                            </div>
-                        </li> -->
-                    <li>
-                        <a href="#">登陆</a>
-                        <a href="#" style="margin-left: 8px;">注册</a>
-                    </li>
-                    <span class="line fl"></span>
-                    <li><a href="#">帮助中心</a></li>
-                    <span class="line fl"></span>
-                    <li><a href="#" style="padding-left: 25px;"><span class="icon app"></span>下载 APP</a></li>
-                    <span class="line fl"></span>
-                    <li style="position: relative;">
-                        <a href="#" style="padding-right: 22px;">资质证照 / 协议规则<span class="icon down"></span></a>
-                        <div class="top-nav">
-                            <ul>
-                                <li><a href="#">资质证照</a></li>
-                                <li><a href="#">协议规则</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
 
     <!-- header -->
     <div id="header">
-        <div class="header con">
-            <h1 class="logo fl">
-                <a href="#"><img src="../img/logo.png" alt=""></a>
-            </h1>
-            <a class="limit fl" href="#">限时抢购</a>
-            <a href="#" class="icon-cart fr"></a>
-            <div class="search fr">
-                <a href="#" class="icon-search"></a>
-                <input type="text" placeholder="搜一搜" id="search-val">
-            </div>
-        </div>
     </div>
 
     <!-- main -->
@@ -71,6 +24,11 @@
             <div class="main-nav">
                 <a href="../index.html">首页 ></a>
                 <a class="path" href="#">购物车</a>
+            </div>
+            <div class="no-goods">
+                <img src="../img/no-cart.png" alt="">
+                <p>购物车还是空的</p>
+                <a href="../html/list.html">继续逛</a>
             </div>
             <div class="main-title">
                 <a class="select-btn"></a>
@@ -82,11 +40,11 @@
                 <span class="edit">操作</span>
             </div>
             <div class="main-content">
-                <div class="shop-info">
+                <!-- <div class="shop-info">
                     <a class="select-btn"></a>
                     <span>小米自营(特殊商品)</span>
-                </div>
-                <div class="good-items clearfix">
+                </div> -->
+                <!-- <div class="good-items clearfix">
                     <div class="goodselect fl">
                         <a class="select-btn"></a>
                     </div>
@@ -114,9 +72,9 @@
                     <div class="gooddel fl">
                         <a href="#" class="del"></a>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="good-items clearfix">
+                <!-- <div class="good-items clearfix">
                     <div class="goodselect fl">
                         <a class="select-btn"></a>
                     </div>
@@ -144,19 +102,19 @@
                     <div class="gooddel fl">
                         <a href="#" class="del"></a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="main-foot">
                 <div class="ico fl">
                     <a class="select-btn"></a>
                     <span class="select-text">全选</span>
                     <span class="select-num">已选
-                        <span>8</span>
+                        <span>0</span>
                         件</span>
                 </div>
                 <div class="totol-price">
                     <span>合计：</span>
-                    <span class="totol">2299.00</span>
+                    <span class="totol">0.00</span>
                 </div>
                 <a href="" class="checkout fr">去结算</a>
             </div>
@@ -165,50 +123,28 @@
 
     <!-- fixedbar -->
     <div id="fixedbar">
-        <ul>
-            <li>
-                <i class="icon"></i>
-                <p>联系客服</p>
-            </li>
-            <li>
-                <i class="icon"></i>
-                <p>下载APP</p>
-            </li>
-            <li>
-                <i class="icon"></i>
-                <p>新人有礼</p>
-            </li>
-            <li>
-                <i class="icon"></i>
-                <p>关注微信</p>
-            </li>
-            <li>
-                <i class="icon"></i>
-                <p>回到顶部</p>
-            </li>
-        </ul>
     </div>
 
     <!-- footer -->
     <div id="footer">
-        <div class="footer con">
-            <div class="f-logo fl">
-                <img src="../img/logo.png" alt="">
-            </div>
-            <div class="f-logo fr">
-                <img src="../img/flogo.png" alt="">
-            </div>
-            <div class="about fr">
-                <p>©xiaomiyoupin.com 苏B2-20180351 苏ICP备18025642号-1 <i class="icon"><img src="../img/ficon.png"
-                            alt=""></i>苏公网安备 32010502010244号</p>
-                <p>企业名称：有品信息科技有限公司 关于我们 入驻有品</p>
-                <p>小米有品平台运营主体变更公告</p>
-                <p>南京市建邺区白龙江东街8号3栋9层</p>
-            </div>
-        </div>
     </div>
-
-
 </body>
+
+<script src="../lib/jquery-1.10.1.min.js"></script>
+<script src="../lib/cookie.js"></script>
+
+<script>
+    (function () {
+        $('#top').load('../html/top.html');
+        $('#header').load('../html/header.html');
+        $('#fixedbar').load('../html/bar.html');
+        $('#footer').load('../html/footer.html');
+
+        $.getScript('../js/common.js', function () {
+            $.getScript('../js/cart.js');
+        });
+
+    })();
+</script>
 
 </html>

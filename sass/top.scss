@@ -1,0 +1,124 @@
+#top {
+    height: 48px;
+    background: #333;
+    font-size: 14px;
+    line-height: 48px;
+    color: #e7e7e7;
+    margin-bottom: 20px;
+
+    a {
+        color: #e7e7e7;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .fr {
+        /* width: 465px; */
+        height: 48px;
+
+        li {
+            float: left;
+            margin: 0 8px;
+            position: relative;
+        }
+
+        .line {
+            display: inline-block;
+            border-color: #666;
+            margin: 17px 3px 0 6px;
+            height: 16px;
+            vertical-align: middle;
+            border-right: 1px solid #e7e7e7;
+        }
+
+        .icon {
+            display: inline-block;
+            background-image: url('../img/icons.png')
+        }
+
+        .app {
+            width: 30px;
+            height: 30px;
+            background-position: 0 -1016px;
+            position: absolute;
+            left: -5px;
+            top: 9px;
+        }
+
+        .down {
+            width: 30px;
+            height: 30px;
+            background-position: 0 -1662;
+            position: absolute;
+            right: -10;
+            top: 9px;
+        }
+
+        .user {
+            width: 30px;
+            height: 30px;
+            background-position: 0 -710;
+            position: absolute;
+            left: 0;
+            top: 9px;
+        }
+
+        .login-info {
+            position: relative;
+            display: none;
+
+            &:hover .top-nav {
+                height: 175px;
+                opacity: 1;
+            }
+        }
+
+        .top-nav {
+            position: absolute;
+            width: 100px;
+            height: 0;
+            left: 50%;
+            margin-left: -50px;
+            top: 48px;
+            box-shadow: 0 3px 28px rgba(0, 0, 0, .1);
+            transition: all .3s cubic-bezier(0, 1, .5, 1);
+            background: #fff;
+            z-index: 999;
+            overflow: hidden;
+            opacity: 0;
+
+            li {
+                width: 80px;
+                height: 35px;
+                line-height: 35px;
+                padding: 0 10px;
+                margin: 0;
+                text-align: center;
+
+                a {
+                    display: block;
+                    font-size: 14px;
+                    color: #666;
+                }
+
+                &:hover {
+                    background: #845f3f;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        #userinfo {
+            display: inline-block;
+            min-width: 50px;
+            text-align: center;
+            padding: 0 25px 0 40px;
+            margin-right: -5px;
+        }
+    }
+}

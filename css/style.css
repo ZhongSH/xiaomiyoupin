@@ -230,8 +230,8 @@
 }
 
 .nav .nav2{
-    width: 797px;
-    height: 316px;
+    width: 798px;
+    height: 317px;
     padding: 20px 30px;
     background: #fff;
     border: 1px solid #eee;
@@ -277,7 +277,7 @@
 .nav li:hover .nav2{
     display: block;
     top: 0;
-    right: 0;
+    right: -1px;
 }
 
 .banner .swiper {

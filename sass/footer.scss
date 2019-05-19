@@ -1,0 +1,27 @@
+#footer {
+    height: 45px;
+    margin-top: 60px;
+    padding: 45px 0;
+    line-height: 23px;
+    border-top: 1px solid #e7e7e7;
+    color: #666;
+
+    .f-logo img {
+        height: 45px;
+    }
+
+    .f-logo.fr img {
+        height: 36px;
+    }
+
+    .about {
+        font-size: 12px;
+        color: #666;
+        margin-right: 40px;
+
+        img {
+            width: 15;
+            height: 15px;
+        }
+    }
+}

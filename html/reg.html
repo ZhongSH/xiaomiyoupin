@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>注册小米账号</title>
+    <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/reg.css">
 </head>
@@ -20,15 +21,23 @@
             <!-- 用户名 -->
             <label for="username">用户名</label>
             <input class="inputval" autocomplete="off" id="username" placeholder="邮箱/手机号码/小米ID" type="text">
-            <div class="tip">
+            <div class="tip" id="name_er">
                 <i class="icon"></i>
                 <span>错误信息</span>
             </div>
 
             <!-- 密码 -->
             <label for="password">密码</label>
-            <input class="inputval" placeholder="密码" autocomplete="off" id="pwd" type="password">
-            <div class="tip">
+            <input class="inputval" placeholder="密码" autocomplete="off" id="password" type="text">
+            <div class="tip" id="psw_er">
+                <i class="icon"></i>
+                <span>错误信息</span>
+            </div>
+
+            <!-- 密码 -->
+            <label for="password2">重复输入密码</label>
+            <input class="inputval" placeholder="密码" autocomplete="off" id="password2" type="password">
+            <div class="tip" id="psw_er2">
                 <i class="icon"></i>
                 <span>错误信息</span>
             </div>
@@ -37,24 +46,29 @@
             <!-- 手机号码 -->
             <label for="">手机号码</label>
             <input class="add fl" type="button" value="+86">
-            <input class="inputval fl" type="text">
-            <div class="tip">
+            <input id="phone" class="inputval fl" type="text">
+            <div class="tip" id="phone_er">
                 <i class="icon"></i>
                 <span>错误信息</span>
             </div>
-
+            <div class="clearfix"></div>
 
             <!-- 验证码 -->
-            <label for="codeval">验证码</label>
+            <!-- <label for="codeval">验证码</label>
             <input class="inputval" id="codeval" placeholder="验证码" autocomplete="off" type="text">
-            <input id="code" type="button" value="重新发送(50s)">
+            <input id="sendcode" type="button" value="发送验证码"> -->
+
             <!-- 提示信息 -->
-            <div class="tip">
+            <!-- <div class="tip">
                 <i class="icon"></i>
                 <span>错误信息</span>
-            </div>
+            </div> -->
+
             <!-- 登陆按钮 -->
-            <div class="btn"><input class="regbtn" id="regbtn" type="button" value="立即注册"></div>
+
+            <div class="btn">
+                <input class="regbtn" id="regbtn" type="button" value="立即注册">
+            </div>
         </div>
     </div>
     <div id="foot">
@@ -83,5 +97,8 @@
         </p>
     </div>
 </body>
+
+<script src="../lib/jquery-1.10.1.min.js"></script>
+<script src="../js/reg.js"></script>
 
 </html>

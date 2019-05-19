@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>小米账号登陆</title>
+    <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/login.css">
 </head>
@@ -20,9 +21,9 @@
             <!-- 用户名 -->
             <input class="inputval" autocomplete="off" id="username" placeholder="邮箱/手机号码/小米ID" type="text">
             <!-- 密码 -->
-            <input class="inputval" placeholder="密码" autocomplete="off" id="pwd" type="password">
-
-            <input class="inputval" id="codeval" placeholder="图片验证码" autocomplete="off" type="text">
+            <input class="inputval" placeholder="密码" autocomplete="off" id="password" type="password">
+            <!-- 验证码 -->
+            <input class="inputval" id="incode" placeholder="图片验证码" autocomplete="off" type="text">
             <input id="code" type="button" value="4E96">
             <!-- 提示信息 -->
             <div class="tip">
@@ -66,5 +67,9 @@
         </p>
     </div>
 </body>
+
+<script src="../lib/jquery-1.10.1.min.js"></script>
+<script src="../lib/cookie.js"></script>
+<script src="../js/login.js"></script>
 
 </html>

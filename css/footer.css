@@ -1,0 +1,25 @@
+#footer {
+  height: 45px;
+  margin-top: 60px;
+  padding: 45px 0;
+  line-height: 23px;
+  border-top: 1px solid #e7e7e7;
+  color: #666;
+}
+#footer .f-logo img {
+  height: 45px;
+}
+#footer .f-logo.fr img {
+  height: 36px;
+}
+#footer .about {
+  font-size: 12px;
+  color: #666;
+  margin-right: 40px;
+}
+#footer .about img {
+  width: 15;
+  height: 15px;
+}
+
+/*# sourceMappingURL=footer.css.map */

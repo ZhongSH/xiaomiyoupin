@@ -1,0 +1,74 @@
+#fixedbar {
+    position: fixed;
+    top: 220px;
+    right: 10px;
+    z-index: 999;
+    width: 71px;
+    padding: 0 5px;
+    background: #fff;
+    box-shadow: 0 0 18px rgba(0, 0, 0, .1);
+
+    li {
+        padding: 10px;
+        border-bottom: 1px solid #e7e7e7;
+        cursor: pointer;
+        font-size: 12px;
+        text-align: center;
+        position: relative;
+        color: #333;
+        height: 51px;
+
+        &:hover {
+            color: #845f3f;
+        }
+
+        .icon {
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin: 0 auto 4px;
+            background-image: url('../img/icons.png');
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(1) .icon {
+            background-position: 0 -1628px;
+        }
+
+        &:nth-child(1):hover .icon {
+            background-position: 0 -1594px;
+        }
+
+        &:nth-child(2):hover .icon {
+            background-position: 0 -1220px;
+        }
+
+        &:nth-child(2) .icon {
+            background-position: 0 -1254px;
+        }
+
+        &:nth-child(3) .icon {
+            background-position: 0 -778px;
+        }
+
+        &:nth-child(3):hover .icon {
+            background-position: 0 -744px;
+        }
+
+        &:nth-child(4) .icon {
+            background-position: 0 -982px;
+        }
+
+        &:nth-child(4):hover .icon {
+            background-position: 0 -1764px;
+        }
+
+        &:nth-child(5) .icon {
+            background-position: 0 -1288px;
+        }
+
+        &:nth-child(5):hover .icon {
+            background-position: 0 -1322px;
+        }
+    }
+}
