@@ -29,6 +29,10 @@
         p{
             margin: 24px 0;
             color: #333;
+
+            &.p2{
+                display: none;
+            }
         }
 
         a{
@@ -44,6 +48,11 @@
             box-sizing: border-box;
             padding: 0 6px;
             transition: all .5s cubic-bezier(0,1,.5,1);
+
+            &.a2{
+                display: none;
+                margin: 0 auto;
+            }
 
             &:hover{
                 color: #fff;

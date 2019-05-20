@@ -168,6 +168,8 @@ $(function () {
                 data: 'name=' + $('#username').val() + '&psw=' + $('#password').val() + '&phone=' + $('#phone').val(),
                 success: function (str) {
                     console.log(str);
+                    alert('注册成功');
+                    location.href = '../html/login.html';
                 }
             });
         }

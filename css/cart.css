@@ -27,6 +27,9 @@
   margin: 24px 0;
   color: #333;
 }
+#main .no-goods p.p2 {
+  display: none;
+}
 #main .no-goods a {
   width: 97px;
   height: 43px;
@@ -40,6 +43,10 @@
   box-sizing: border-box;
   padding: 0 6px;
   transition: all 0.5s cubic-bezier(0, 1, 0.5, 1);
+}
+#main .no-goods a.a2 {
+  display: none;
+  margin: 0 auto;
 }
 #main .no-goods a:hover {
   color: #fff;

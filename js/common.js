@@ -47,23 +47,31 @@ $(function () {
     var gid = 1;
 
     function getCartNum() {
+
+        var user = "'"+getCookie('user')+"'";
+
         $.ajax({
             type: "post",
             url: "../api/getcartnum.php",
-            data: "user=" + getCookie('user') + "&gid=" + gid,
+            data: "user=" + user + "&gid=" + gid,
             success: function (str) {
-                var arr = JSON.parse(str);
-                //购物车总数量
-                var allnum = 0;
-                for (var i = 0; i < arr.cartlist.length; i++) {
-                    allnum += Number(arr.cartlist[i].gnum);
-                }
-                console.log(allnum);
-                $('.cart_info').html(allnum);
 
-                //购物车当前单品数量
-                for (var j = 0; j < arr.goodnum.length; j++) {
-                    thisNum = Number(arr.goodnum[0].gnum);
+                if (str == 'no') {
+
+                } else {
+                    var arr = JSON.parse(str);
+                    //购物车总数量
+                    var allnum = 0;
+                    for (var i = 0; i < arr.cartlist.length; i++) {
+                        allnum += Number(arr.cartlist[i].gnum);
+                    }
+                    console.log(allnum);
+                    $('.cart_info').html(allnum);
+
+                    //购物车当前单品数量
+                    for (var j = 0; j < arr.goodnum.length; j++) {
+                        thisNum = Number(arr.goodnum[0].gnum);
+                    }
                 }
             }
         });

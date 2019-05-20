@@ -41,25 +41,35 @@ $(function () {
     var thisNum = 0
 
     function getCartNum() {
+
+        var name = "'"+getCookie('user')+"'";
+
         $.ajax({
             type: "post",
             url: "../api/getcartnum.php",
-            data: "user=" + user + "&gid=" + gid,
+            data: "user=" + name + "&gid=" + gid,
             success: function (str) {
-                var arr = JSON.parse(str);
 
-                //购物车总数量
-                var allnum = 0;
-                for (var i = 0; i < arr.cartlist.length; i++) {
-                    allnum += Number(arr.cartlist[i].gnum);
-                }
-                console.log(allnum);
-                $('.cart_info').html(allnum);
+                if(str == 'no'){
 
-                //购物车当前单品数量
-                for (var j = 0; j < arr.goodnum.length; j++) {
-                    thisNum = Number(arr.goodnum[0].gnum);
+                }else{
+                    var arr = JSON.parse(str);
+    
+                    //购物车总数量
+                    var allnum = 0;
+                    for (var i = 0; i < arr.cartlist.length; i++) {
+                        allnum += Number(arr.cartlist[i].gnum);
+                    }
+                    console.log(allnum);
+                    $('.cart_info').html(allnum);
+    
+                    //购物车当前单品数量
+                    for (var j = 0; j < arr.goodnum.length; j++) {
+                        thisNum = Number(arr.goodnum[0].gnum);
+                    }
+
                 }
+
             }
         });
     }
@@ -68,7 +78,7 @@ $(function () {
 
     // 添加到购物车
     $('.addcart').click(function () {
-        if (user) {
+        if (getCookie('user')) {
             var cart_num = Number($('.cart_info').html());
             var good_num = Number($('.count-input').val());
             alert('已添加到购物车');
@@ -78,7 +88,7 @@ $(function () {
             $.ajax({
                 type: "post",
                 url: "../api/addcart.php",
-                data: "gid=" + gid + "&gname=" + $('.goodname').html() + "&gprice=" + $('.price').html() + "&gimg=" + gimg + "&gnum=" + good_num + "&user=" + user + "&has=" + thisNum,
+                data: "gid=" + gid + "&gname=" + $('.goodname').html() + "&gprice=" + $('.price').html() + "&gimg=" + gimg + "&gnum=" + good_num + "&user=" + getCookie('user') + "&has=" + thisNum,
                 success: function (str) {
                     getCartNum();
                     // $('.cart_info').html(str);
